@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom utility classes for themed colors */
+.primary {
+  @apply bg-primary text-white dark:bg-darkPrimary dark:text-white;
+}
+
+.secondary {
+  @apply bg-secondary text-foreground dark:bg-darkSecondary dark:text-darkForeground;
+}
+
+.background {
+  @apply bg-background text-foreground dark:bg-darkBackground dark:text-darkForeground;
+}
+
+.foreground {
+  @apply text-foreground dark:text-darkForeground;
+}
+
+/* Button styling */
+.btn {
+  @apply px-4 py-1.5 rounded-lg shadow-md transition duration-200 ease-in-out font-medium;
+}
+
+/* Primary button styling */
+.btn-primary {
+  @apply bg-primary text-white dark:bg-darkPrimary dark:text-white border border-transparent;
+}
+
+.btn-primary:hover {
+  @apply bg-primaryDark shadow-lg; /* Darker shade and scaling on hover */
+}
+
+/* Secondary button styling */
+.btn-secondary {
+  @apply bg-secondary text-foreground dark:bg-darkSecondary dark:text-darkForeground border border-transparent;
+}
+
+.btn-secondary:hover {
+  @apply bg-secondaryDark shadow-lg; /* Darker shade and scaling on hover */
+}
