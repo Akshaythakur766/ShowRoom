@@ -54,7 +54,7 @@ const NavBar = () => {
     <nav className="w-full h-14 bg-background dark:bg-primaryDark">
       <div className="flex justify-between">
         <div>
-          <div className="font-extrabold text-4xl text-pink-300 px-3 py-1">
+          <div className="font-extrabold text-4xl text-primaryDark dark:text-pink-300 px-3 py-1">
             ShowRoom
           </div>
         </div>
